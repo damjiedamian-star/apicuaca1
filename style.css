@@ -1,0 +1,151 @@
+
+/* Mengatur seluruh elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur background halaman */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Kotak utama aplikasi */
+.container {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+
+    padding: 30px;
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Judul aplikasi */
+h1 {
+    color: #2193b0;
+    margin-bottom: 10px;
+}
+
+/* Tulisan di bawah judul */
+.subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Kotak pencarian */
+.search-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Input nama kota */
+input {
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+
+    font-size: 16px;
+    outline: none;
+}
+
+/* Efek saat input diklik */
+input:focus {
+    border-color: #2193b0;
+}
+
+/* Tombol pencarian */
+button {
+    padding: 14px;
+
+    background: #2193b0;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Efek tombol saat diarahkan mouse */
+button:hover {
+    background: #176b85;
+}
+
+/* Tombol ketika proses pencarian */
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Pesan error */
+#message {
+    margin-top: 15px;
+    color: #d9534f;
+    font-size: 14px;
+}
+
+/* Bagian informasi cuaca */
+.weather-info {
+    margin-top: 25px;
+    padding: 20px;
+
+    background: #eaf8fc;
+    border-radius: 15px;
+
+    display: none;
+}
+
+/* Nama kota */
+.weather-info h2 {
+    color: #333;
+}
+
+/* Ikon cuaca */
+.weather-icon {
+    font-size: 65px;
+    margin: 15px 0;
+}
+
+/* Suhu */
+.weather-info h1 {
+    font-size: 45px;
+    color: #2193b0;
+}
+
+/* Kondisi cuaca */
+.weather-info p {
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Bagian footer */
+footer {
+    margin-top: 25px;
+    color: #999;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* Tampilan HP */
+@media (max-width: 400px) {
+    .container {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🌤 Weather App</h1>
+        <p class="subtitle">Cari Informasi Cuaca Kota Kamu</p>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Masukkan nama kota..."
+            >
+
+            <button id="searchBtn">Cari Cuaca</button>
+        </div>
+
+        <p id="message"></p>
+
+        <div class="weather-info" id="weatherInfo">
+
+            <h2 id="cityName">Nama Kota</h2>
+
+            <div class="weather-icon" id="weatherIcon">
+                🌤️
+            </div>
+
+            <h1 id="temperature">--°C</h1>
+
+            <p id="weatherCondition">Kondisi Cuaca</p>
+
+        </div>
+
+        <footer>
+            <p>© 2026 Weather App</p>
+            <p>Powered by Open-Meteo API</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
